@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>All Albums</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/albums.css" rel="stylesheet">
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapse" data-toggle="collapse" data-target="#navbar" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index">Jammer</a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">                    
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#">Albums</a></li>
+			<li><a href="playlist" id="playlist">Play List</a></li>
+                        <li><a href="statics" id="statics">Statics</a></li>   
+                        <li><a href="logout">Logout</a></li>                     
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div id="session1" class="container-fluid info">               
+            <div class="col-lg-3">
+                <div class="row">               
+                    <div class="column add-bottom">
+                        <div id="mainwrap">
+                            <div id="nowPlay">
+                                <span class="left" id="npAction">Paused...</span>
+                                <span class="right" id="npTitle"></span>
+                            </div>
+                            <div id="audiowrap">                                
+                                <audio preload id="audio1" controls>Your browser does not support HTML5 Audio!</audio>                                
+                                <div id="tracks">
+                                    <button id="btnPrev" class="btn-default"><span class="glyphicon glyphicon-backward" aria-hidden="true"></span></button>
+                                    <button id="btnPlay" class="btn-default"><span class="glyphicon glyphicon-play" aria-hidden="true"></span></button>
+                                    <button id="btnNext" class="btn-default"><span class="glyphicon glyphicon-forward" aria-hidden="true"></span></button>
+                                </div>
+                            </div>
+                            <div id="plwrap">
+                                <ul id="plList"></ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-offset-1 col-lg-8">
+                <div class="row eachrow">
+                    <div class="col-lg-3">                    
+                        <div class="panel panel-info">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" href="#collapse1" id="collapse">Justin Timberlake</a>
+                                </h4>
+                            </div>
+                            <div id="collapse1" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <img src="songs/justin_timberlake/justin_timberlake.jpg" alt="Album1" /> 
+                                    <ul>
+                                        <li class="addSong" data-album="justin_timberlake" data-song="cry me a river" data-time="4:50
+                                        ">
+                                            <h4><span class="glyphicon glyphicon-plus-sign"></span> Cry me a river</h4></li>
+                                    </ul>
+                                </div>                            
+                            </div>
+                        </div>     
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="panel panel-info">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" href="#collapse2">Lingaa</a>
+                                </h4>
+                            </div>
+                            <div id="collapse2" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <img src="songs/Lingaa/Lingaa.jpg" alt="Album1">
+                                    <ul>
+                                        <li class="addSong" data-album="Lingaa" data-song="Vo Rabba Rabba" data-time="4:24">
+                                            <h4><span class="glyphicon glyphicon-plus-sign"></span> Vo Rabba Rabba</h4></li>
+                                        <li class="addSong" data-album="Lingaa" data-song="Vo Manmadhaa" data-time="4:48">
+                                            <h4><span class="glyphicon glyphicon-plus-sign"></span> Vo Manmadhaa</h4></li>
+                                        <li class="addSong" data-album="Lingaa" data-song="Sathyam Shivamu" data-time="5:22">
+                                            <h4><span class="glyphicon glyphicon-plus-sign"></span> Sathyam Shivamu</h4></li>
+                                        <li class="addSong" data-album="Lingaa" data-song="Monaa Monaa" data-time="6:02">
+                                            <h4><span class="glyphicon glyphicon-plus-sign"></span> Monaa Monaa</h4></li>
+                                        <li class="addSong" data-album="Lingaa" data-song="Indiany Raa" data-time="6:06">
+                                            <h4><span class="glyphicon glyphicon-plus-sign"></span> Indiany Raa</h4></li>
+                                    </ul>
+                                </div>                            
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="panel panel-info">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" href="#collapse3" class="">Barfi</a>
+                                </h4>
+                            </div>
+                            <div id="collapse3" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <img src="songs/Barfi/Barfi.jpg" alt="Album1">
+                                    <ul>
+                                        <li class="addSong" data-album="Barfi" data-song="Saawali Si Raat" data-time="5:14">
+                                            <h4><span class="glyphicon glyphicon-plus-sign"></span> Saawali Si Raat</h4></li>
+                                        <li class="addSong" data-album="Barfi" data-song="Aashiyan (Solo)" data-time="4:12">
+                                            <h4><span class="glyphicon glyphicon-plus-sign"></span> Aashiyan (Solo)</h4></li>
+                                        <li class="addSong" data-album="Barfi" data-song="Ala Barfi (Kaju Barfi)" data-time="5:25">
+                                            <h4><span class="glyphicon glyphicon-plus-sign"></span> Ala Barfi (Kaju Barfi)</h4></li>
+                                        <li class="addSong" data-album="Barfi" data-song="Ala Barfi" data-time="5:19">
+                                            <h4><span class="glyphicon glyphicon-plus-sign"></span> Ala Barfi</h4></li>
+                                        <li class="addSong" data-album="Barfi" data-song="Kyon" data-time="4:27">
+                                            <h4><span class="glyphicon glyphicon-plus-sign"></span> Kyon</h4></li>
+                                        <li class="addSong" data-album="Barfi" data-song="Main Kya Karoon" data-time="4:31">
+                                            <h4><span class="glyphicon glyphicon-plus-sign"></span> Main Kya Karoon</h4></li>
+                                        <li class="addSong" data-album="Barfi" data-song="Phir Le Aya Dil (Redux)" data-time="5:04">
+                                            <h4><span class="glyphicon glyphicon-plus-sign"></span> Phir Le Aya Dil (Redux)</h4></li>
+                                        <li class="addSong" data-album="Barfi" data-song="Phir Le Aya Dil (Reprise)" data-time="5:07">
+                                            <h4><span class="glyphicon glyphicon-plus-sign"></span> Phir Le Aya Dil (Reprise)</h4></li>
+                                        <li class="addSong" data-album="Barfi" data-song="Phir Le Aya Dil" data-time="4:45">
+                                            <h4><span class="glyphicon glyphicon-plus-sign"></span> Phir Le Aya Dil</h4></li>
+                                    </ul>
+                                </div>                            
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>            
+            </div>
+
+        </div>        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>        
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>   
+        <script src="js/albums.js"></script>        
+    </body>
+</html>
+

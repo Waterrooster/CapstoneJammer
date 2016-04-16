@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Login</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">        
+        <link href="css/login.css" rel="stylesheet">
+
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapse" data-toggle="collapse" data-target="#navbar" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index">Jammer</a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">                    
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="login">Login</a></li>
+                        <li class="active"><a href="#">Register</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container"> 
+            <div class="well well-lg" id="registerWell">
+                <h2>Register</h2>
+                <br/>
+                <form class="form-horizontal" role="form" id="rform" action="addUser" method="post" onsubmit="return rverify()">                    
+                    <div class="form-group">
+                        <label class="control-label col-sm-3" for="rusername">Username:</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="rusername" name="username" placeholder="Enter username" required="required">
+                        </div>
+                    </div>                    
+                    <div class="form-group">
+                        <label class="control-label col-sm-3" for="rpwd">Password:</label>
+                        <div class="col-sm-9">          
+                            <input type="password" class="form-control" id="rpwd" name="pswd" placeholder="Enter password" required="required">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-3" for="rrpwd">ReType-Password:</label>
+                        <div class="col-sm-9">          
+                            <input type="password" class="form-control" id="rrpwd" placeholder="Re-Enter password" required="required">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-3" for="remail">Email:</label>
+                        <div class="col-sm-9">
+                            <input type="email" class="form-control" id="remail" name="email" placeholder="Enter email" required="required">
+                        </div>
+                    </div>
+                    <br/>
+                    <div class="form-group">        
+                        <div class="col-sm-offset-3 col-sm-3">
+                            <button type="submit" class="btn btn-default btn-block btn-info">Register</button>
+                        </div>
+                        <div class="col-sm-offset-1 col-sm-3">
+                            <button type="button" class="btn btn-default btn-block" id="btnreset">Reset</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>        
+        <script src="js/login.js"></script>        
+    </body>
+</html>
