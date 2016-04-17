@@ -1,10 +1,31 @@
 
-body{
-    background-image: url("../images/bg3.jpg");
-    background-size: cover;
+/**
+ * @author Srikanth Jonnakuti <sjonnakuti2015@my.fit.edu>
+ */
+
+ body {
+  margin: 0;
+  background: #000; 
+}
+video { 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+  background-size: cover;
+  transition: 1s opacity;
+}
+.btn-primary{
+	width: 150px;
+	height:50px;
 }
 .info{
-    margin-top: 55%;
+    margin-top: 39%;
     text-align: center;
 }
 .glyphicon {

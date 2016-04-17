@@ -1,4 +1,7 @@
-
+/**
+ * @author Srikanth Jonnakuti <sjonnakuti2015@my.fit.edu>
+ */
+ 
 $(document).ready(function () {
     $('#btnreset').click(function () {
         $('#rusername').val('');

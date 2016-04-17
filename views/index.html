@@ -1,3 +1,8 @@
+<!--
+  @author Srikanth Jonnakuti <sjonnakuti2015@my.fit.edu>
+  -->
+
+
 <!DOCTYPE html>
 
 <html>
@@ -10,23 +15,23 @@
     </head>
     <body>
         <nav class="navbar navbar-fixed-top">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapse" data-toggle="collapse" data-target="#navbar" aria-controls="navbar">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="index">Jammer</a>
-                </div>
-                <div id="navbar" class="navbar-collapse collapse">                    
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="albums" class="btn btn-default btn-lg" role="button">Albums</a></li>
-                        <li><a href="statistics" class="btn btn-info btn-lg" role="button">statistics</a></li>                        
-                    </ul>
-                </div>
-            </div>
+            <div class="col-xs-12">
+  <div class="panel-group">
+    
+      <div class="panel-body">
+        <div class="btn-group">
+          <a href="index"><button class="btn btn-primary btn-sm">Jammer</button></a>
+        </div>
+        <div class="btn-group pull-right">
+          <div class="pull-right">  
+            <a href="albums"><button class="btn btn-primary btn-sm ">Albums</button></a>
+            <a href="statistics"><button class="btn btn-primary btn-sm ">Statistics</button></a>
+          </div>
+        </div>
+      </div>
+    
+  </div>
+</div>
         </nav>  
         <div class="container-fluid info footer">
             <div class="well well-lg">
@@ -56,6 +61,10 @@
                 </div>
             </div>
         </div>
+        <video autoplay  poster="../images/bg3.jpg" id="bgvid" loop>
+<source src="../images/video1.mp4" type="video/mp4">
+           
+</video>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script src="bootstrap/js/bootstrap.min.js"></script>
     </body>
