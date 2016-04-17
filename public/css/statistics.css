@@ -3,13 +3,6 @@ body{
     background-image: url("../images/bg3.jpg");
     background-size: cover;
 }
-.info{
-    margin-top: 55%;
-    text-align: center;
-}
-.glyphicon {
-    font-size: 40px;
-}
 .btn{
     margin-left: 20px;
 }
