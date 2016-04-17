@@ -112,8 +112,8 @@ $.get("/getPlaylist", function(data) {
         }
     });
 
-// on click statics send played details to server  
-$('#statics').click(function (e) {
+// on click statistics send played details to server  
+$('#statistics').click(function (e) {
 	e.preventDefault();
 	var info=JSON.stringify(played);
 	$.ajax({
@@ -122,7 +122,7 @@ $('#statics').click(function (e) {
 	   contentType: 'application/json',
 	   data: info
 	   });
-	   var url = "statics";        
+	   var url = "statistics";        
            window.location.href = url;
     });    
 $('#playlist').click(function (e) {

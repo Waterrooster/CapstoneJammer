@@ -156,11 +156,11 @@ playlist=[];
   res.sendFile(__dirname +'/views/playlist.html');
 });
 
-app.get('/statics', function (req, res) {
+app.get('/statistics', function (req, res) {
 if(duname===''){
     res.sendFile(__dirname +'/views/login.html');
   }else{
-  res.sendFile(__dirname +'/views/statics.html');
+  res.sendFile(__dirname +'/views/statistics.html');
   }
 });
 
