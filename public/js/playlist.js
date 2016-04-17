@@ -1,3 +1,7 @@
+/**
+ * @author Srikanth Jonnakuti <sjonnakuti2015@my.fit.edu>
+ */
+
 $('document').ready(function(){
     $.get("/getPlaylist", function(data) {
         var playlist=data;    

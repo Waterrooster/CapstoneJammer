@@ -1,4 +1,6 @@
-
+/**
+ * @author Srikanth Jonnakuti <sjonnakuti2015@my.fit.edu>
+ */
 var curTrack = 0;
 var playing = false;
 var trackCount = -1;
@@ -46,6 +48,8 @@ $.get("/getPlaylist", function(data) {
             }
             playing = true;
         }        
+        changeIcon();
+
     });
 // on btn prev click
     $('#btnPrev').click(function () {
@@ -140,6 +144,16 @@ $('#playlist').click(function (e) {
 
 });// end of ready
 
+function changeIcon(){
+    if(playing){
+        $('#btnPlay span').removeClass('glyphicon-play').addClass('glyphicon-stop');
+        $('#npAction').text('Playing...');
+    }else{
+        $('#btnPlay span').removeClass('glyphicon-stop').addClass('glyphicon-play');
+        $('#npAction').text('Paused...');
+    }
+}
+
 function playSong() {
     var audio = $('#audio1').get(0);
     var path = "songs/" + tracks[curTrack].file + ".mp3";
@@ -159,6 +173,7 @@ function playSong() {
                     count: 1
                 });
     }
+    $('#npTitle').text(tracks[curTrack].name);
     audio.src = path;
     audio.play();
 }
