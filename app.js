@@ -1,3 +1,7 @@
+/**
+ * @author Srikanth Jonnakuti <sjonnakuti2015@my.fit.edu>
+ */
+ 
 var express = require('express');
 var bodyParser=require("body-parser");
 var app = express();
@@ -27,7 +31,6 @@ var insertUser = function(db, callback) {
 	"playlist":[]      
    }, function(err, result) {
     assert.equal(err, null);
-    console.log("Inserted new user into the users collection.");
     callback();
   });
 };
@@ -53,7 +56,6 @@ var updateUsers = function(db, callback) {
         $set: { "playlist": playlist },
         $currentDate: { "lastModified": true }
       }, function(err, results) {
-      console.log(results);
       callback();
    });
 };
